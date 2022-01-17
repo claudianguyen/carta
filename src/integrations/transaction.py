@@ -1,10 +1,10 @@
 class Transaction:
 
-    def __init__(self, src, dest, amount, transactionId):
+    def __init__(self, src="", dest="", amount=0, transaction_id=""):
         self.src = src
         self.dest = dest
         self.amount = amount
-        self.transactionId = transactionId
+        self.transactionId = transaction_id
 
     # getter method
     def get_src(self):
@@ -19,7 +19,7 @@ class Transaction:
         return self.dest
 
     # setter method
-    def get_dest(self, x):
+    def set_dest(self, x):
         self.dest = x
 
     # getter method
